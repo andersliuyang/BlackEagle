@@ -27,8 +27,10 @@
     <!-- Language -->
     <meta http-equiv="content-language" content="en" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
     <link rel="icon" href="assets/icon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <style>
       /* Normalize footer badge sizes */
@@ -59,6 +61,7 @@
         </div>
         <nav class="top-nav">
           <a id="nav-features" href="#features">Features</a>
+          <a id="nav-advantages" href="#advantages">Why Us</a>
           <a id="nav-scenes" href="#scenes">Scenes</a>
           <a id="nav-config" href="llm-config.html">Configuration</a>
           <a id="nav-blog" href="blog/index.html">Blog</a>
@@ -72,12 +75,9 @@
     <main>
       <section class="hero">
         <div class="container">
-          <div class="promo-banner">
-            <a id="promo-deeptoken" class="promo-link" href="deeptoken-promo.html">New users receive 500,000 Deepseek V3.2 full‑powered Tokens — limited supply, first come, first served.</a>
-          </div>
-          <h1 id="hero-title">BlackEagle Seller — AI Toolkit for E-commerce Sellers</h1>
-          <p id="hero-sub" class="sub">Free · Local-first · No server · BYOK · Privacy-first</p>
-          <p id="hero-desc" class="desc">Optimize titles, analyze reviews, track competitor prices, manage customer service — all from your browser sidebar.</p>
+          <h1 id="hero-title">BlackEagle Seller — Privacy-First AI Toolkit for E-commerce</h1>
+          <p id="hero-sub" class="sub">BYOK · Ollama · Serverless · Multimodal · Web Interaction</p>
+          <p id="hero-desc" class="desc">Read webpages, understand content, take actions. 22+ e-commerce tools + prompt library, BYOK or local Ollama, all in your browser sidebar. Your data stays local, your models your choice.</p>
           <div class="cta">
             <a id="cta-chat" class="btn btn-accent" href="https://app.cozyai.chat/blackeagle" target="_blank" rel="noopener noreferrer">
               Try Online →
@@ -91,9 +91,9 @@
             </div>
           </div>
           <div class="badges">
-            <span id="badge-1">22+ Seller Tools</span>
-            <span id="badge-2">Client-side Only</span>
-            <span id="badge-3">BYOK / Private</span>
+            <span id="badge-1">22+ Tools · Prompt Lib</span>
+            <span id="badge-2">Privacy-First, Local</span>
+            <span id="badge-3">BYOK + Ollama</span>
           </div>
           <img class="hero-logo" src="assets/logo.png" alt="BlackEagle Logo" />
         </div>
@@ -132,6 +132,44 @@
               <span class="material-symbols-outlined card-icon">storefront</span>
               <h3 id="features-multimodal-title">Store Health Check</h3>
               <p id="features-multimodal-desc">AI scans backend pages for anomalies: compliance warnings, refund rates, inventory alerts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="advantages" class="section">
+        <div class="container">
+          <h2 id="advantages-title">Why BlackEagle Seller</h2>
+          <div class="grid grid-3">
+            <div class="card">
+              <span class="material-symbols-outlined card-icon">lock</span>
+              <h3 id="advantage-privacy-title">Privacy-First, Local</h3>
+              <p id="advantage-privacy-desc">All web content and actions stay in your browser. No third-party relay. Config, chats, and preferences stored locally, clearable anytime.</p>
+            </div>
+            <div class="card">
+              <span class="material-symbols-outlined card-icon">key</span>
+              <h3 id="advantage-byok-title">BYOK + Ollama</h3>
+              <p id="advantage-byok-desc">Bring your own OpenAI-compatible API key, or connect a local Ollama deployment. Full control over your models, zero vendor lock-in.</p>
+            </div>
+            <div class="card">
+              <span class="material-symbols-outlined card-icon">travel_explore</span>
+              <h3 id="advantage-web-title">Web Content Understanding</h3>
+              <p id="advantage-web-desc">AI reads webpage semantics, analyzes DOM structure, understands text and images, and can click, fill, and navigate on your behalf.</p>
+            </div>
+            <div class="card">
+              <span class="material-symbols-outlined card-icon">visibility</span>
+              <h3 id="advantage-multimodal-title">Multimodal Interaction</h3>
+              <p id="advantage-multimodal-desc">Automatically understand images, videos, and documents. Interpret screenshots, analyze product images, generate marketing visuals.</p>
+            </div>
+            <div class="card">
+              <span class="material-symbols-outlined card-icon">cloud_off</span>
+              <h3 id="advantage-serverless-title">Serverless AI Agent</h3>
+              <p id="advantage-serverless-desc">Everything runs in your browser — zero server cost. Task scheduling, reminders, automation — no backend required.</p>
+            </div>
+            <div class="card">
+              <span class="material-symbols-outlined card-icon">library_books</span>
+              <h3 id="advantage-prompts-title">Built-in Prompt Library</h3>
+              <p id="advantage-prompts-desc">Ready-to-use e-commerce prompt templates: title optimization, review analysis, CS replies, social content, profit calculation, and more.</p>
             </div>
           </div>
         </div>

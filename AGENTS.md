@@ -9,14 +9,18 @@ The extension *source code* is **not** in this repository.
 
 - `web/` — Website root (served as static files). Entrypoint: `web/index.html`.
 - `blogtexts/` — Markdown sources for blog posts.
-- `assets/` — Logo image.
+- `assets/` at root is logo source; `web/assets/` duplicates it for web use.
 
 ## Blog workflow
 
 1. Write post in `blogtexts/*.md`.
-2. Create corresponding `web/blog/*.html` with same layout as other blog pages.
-3. Add i18n keys to `web/i18n.js` (both `zh` and `en` sections).
-4. Link from `web/blog/index.html` and optionally from `web/index.html` home blog section.
+2. Create `web/blog/<slug>.html` — copy an existing blog post HTML, then:
+   - Set `<body data-page="blog-post-<slug>">`.
+   - Keep the same `<header>` / `<footer>` structure (paths relative to `../`).
+   - Write fallback English in `<title>` and `<meta name="description">` (not i18n-driven).
+   - Use `id` attributes matching i18n keys for all visible text.
+3. Add i18n keys to `web/i18n.js` — key prefix `blog-post-<slug>-*` in both `zh` and `en` sections.
+4. Link from `web/blog/index.html` (`<ul class="list">`) and optionally from `web/index.html` home blog section (`<div class="blog-card-grid">` with `<a class="blog-card">`).
 
 ## i18n
 

@@ -1,75 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Generated on 2026-01-20 -->
+  <!-- Generated on 2026-06-30 -->
   <url>
     <loc>https://blackeagle.cozyai.chat/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://blackeagle.cozyai.chat/index.html</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://blackeagle.cozyai.chat/support.html</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blackeagle.cozyai.chat/install-offline.html</loc>
-    <lastmod>2026-01-17</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blackeagle.cozyai.chat/tutorial.html</loc>
-    <lastmod>2026-01-17</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://blackeagle.cozyai.chat/googlebab9dad53b728c31.html</loc>
-    <lastmod>2026-01-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>https://blackeagle.cozyai.chat/blog/</loc>
-    <lastmod>2026-01-21</lastmod>
+    <loc>https://blackeagle.cozyai.chat/llm-config.html</loc>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://blackeagle.cozyai.chat/blog/generate-4-panel-comic.html</loc>
-    <lastmod>2026-01-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://blackeagle.cozyai.chat/blog/curate-to-notion.html</loc>
-    <lastmod>2026-01-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blackeagle.cozyai.chat/deeptoken-promo.html</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://blackeagle.cozyai.chat/blog/notion-setup.html</loc>
-    <lastmod>2026-01-22</lastmod>
+    <loc>https://blackeagle.cozyai.chat/blog/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blackeagle.cozyai.chat/blog/title-optimizer-guide.html</loc>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://blackeagle.cozyai.chat/blog/browser-tasks.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <loc>https://blackeagle.cozyai.chat/blog/review-analysis-guide.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blackeagle.cozyai.chat/blog/price-tracking-guide.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blackeagle.cozyai.chat/blog/cross-platform-listing.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blackeagle.cozyai.chat/blog/profit-calculator-guide.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blackeagle.cozyai.chat/blog/seller-daily-workflow.html</loc>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

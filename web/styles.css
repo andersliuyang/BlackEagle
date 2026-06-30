@@ -30,8 +30,8 @@
   padding: 18px;
   border: 1px solid var(--border);
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+  background: var(--card);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 .demo-text h3 {
   font-size: 18px;
@@ -88,15 +88,15 @@
   box-sizing: border-box;
 }
 :root {
-  --bg: #0b1220;
-  --bg-alt: #0e1526;
-  --text: #e6edf7;
-  --muted: #b1b8c7;
+  --bg: #ffffff;
+  --bg-alt: #f8fafc;
+  --text: #1e293b;
+  --muted: #64748b;
   --primary: #4f46e5;
   --primary-2: #6366f1;
   --secondary: #0ea5e9;
-  --card: #111827;
-  --border: #1f2937;
+  --card: #ffffff;
+  --border: #e2e8f0;
   --green: #10b981;
 }
 html,
@@ -118,7 +118,7 @@ body {
     Arial,
     "Apple Color Emoji",
     "Segoe UI Emoji";
-  background: radial-gradient(1200px 600px at 20% -10%, #15213c 0%, transparent 60%), radial-gradient(900px 500px at 80% 10%, #0b1c32 0%, transparent 60%), var(--bg);
+  background: var(--bg);
   color: var(--text);
 }
 .container {
@@ -130,8 +130,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(11, 18, 32, 0.6);
-  backdrop-filter: blur(8px);
+  background: #ffffff;
   border-bottom: 1px solid var(--border);
 }
 .site-header .container {
@@ -202,11 +201,10 @@ body {
   justify-content: center;
 }
 .hero-logo {
-  height: 120px;
+  height: 100px;
   width: auto;
   margin: 8px auto 0;
   display: block;
-  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35));
 }
 
 .btn {
@@ -220,20 +218,19 @@ body {
   font-weight: 600;
 }
 .btn-primary {
-  background: linear-gradient(90deg, var(--primary), var(--primary-2));
-  color: white;
-  box-shadow: 0 10px 24px rgba(79, 70, 229, 0.35);
+  background: var(--primary);
+  color: #ffffff;
 }
 .btn-primary:hover {
-  filter: brightness(1.05);
+  background: #4338ca;
 }
 .btn-accent {
-  background: linear-gradient(90deg, #10b981, #22c55e);
-  color: #06271d;
-  box-shadow: 0 10px 24px rgba(16, 185, 129, 0.35);
+  background: var(--green);
+  color: #ffffff;
+  font-weight: 600;
 }
 .btn-accent:hover {
-  filter: brightness(1.05);
+  background: #059669;
 }
 .btn-icon {
   width: 16px;
@@ -241,12 +238,11 @@ body {
   fill: currentColor;
 }
 .btn-secondary {
-  background: linear-gradient(90deg, #0ea5e9, #22d3ee);
-  color: #06263a;
-  box-shadow: 0 10px 24px rgba(14, 165, 233, 0.35);
+  background: var(--secondary);
+  color: #ffffff;
 }
 .btn-secondary:hover {
-  filter: brightness(1.05);
+  background: #0284c7;
 }
 .btn-outline {
   border: 1px solid var(--border);
@@ -269,11 +265,12 @@ body {
 }
 .badges span {
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--bg-alt);
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 12px;
   color: var(--muted);
+  font-weight: 500;
 }
 
 .section {
@@ -303,12 +300,15 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 .card {
-  /* Solid card background avoids alternating body gradients behind text */
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 18px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 .card h3 {
   margin: 0 0 10px;
@@ -318,6 +318,12 @@ body {
   margin: 0;
   color: var(--muted);
 }
+.card-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: var(--primary);
+  display: block;
+}
 
 .download .steps {
   display: grid;
@@ -326,7 +332,7 @@ body {
   margin-top: 16px;
 }
 .step {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 14px;
@@ -362,7 +368,7 @@ body {
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 30px 0;
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--bg-alt);
 }
 .site-footer .container {
   display: flex;
@@ -376,36 +382,27 @@ body {
   font-size: 12px;
 }
 .site-footer .copy a {
-  color: #7dd3fc; /* lighter cyan for better contrast */
+  color: var(--primary);
   text-decoration: none;
   margin-left: 8px;
 }
 .site-footer .copy a:hover {
   text-decoration: underline;
-  color: #93c5fd; /* slightly different hover color */
+  color: #4338ca;
 }
 
 a {
-  color: #7dd3fc; /* lighter cyan for better contrast */
+  color: var(--primary);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --text: #0f172a;
-    --muted: #334155;
-    --bg: #f8fafc;
-    --bg-alt: #f1f5f9;
+    --bg: #ffffff;
+    --bg-alt: #f8fafc;
+    --text: #1e293b;
+    --muted: #64748b;
     --card: #ffffff;
     --border: #e2e8f0;
-  }
-  body {
-    background: var(--bg);
-  }
-  .card {
-    background: white;
-  }
-  .site-header {
-    background: rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -432,26 +429,12 @@ a {
   display: inline-block;
   padding: 6px 10px;
   border-radius: 6px;
-
-  color: transparent;
-  background: linear-gradient(120deg, #fff47f 0%, /* 基础灰色 */ rgb(255, 203, 72) 40%, /* 灰色延续 */ #898989 50%, /* 强烈的白光 */ #bbbbbb 60%, /* 继续灰色 */ #b0b0b0 100%);
-  background-size: 200% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: shineFast 1.5s linear infinite;
-}
-@keyframes shineFast {
-  0% {
-    background-position: -100% 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
+  color: var(--primary);
 }
 
 /* Home blog section */
 .home-blog {
-  background: linear-gradient(145deg, rgba(79, 70, 229, 0.08), rgba(14, 165, 233, 0.05)), var(--bg-alt);
+  background: var(--bg-alt);
   border-top: 1px solid var(--border);
 }
 .home-blog-head {
@@ -472,10 +455,10 @@ a {
   padding: 16px;
   border-radius: 16px;
   border: 1px solid var(--border);
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  background: var(--card);
   text-decoration: none;
   color: var(--text);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   transition:
     transform 0.18s ease,
     box-shadow 0.18s ease,
@@ -483,8 +466,8 @@ a {
 }
 .blog-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.32);
-  border-color: rgba(99, 102, 241, 0.6);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
 }
 .blog-card h3 {
   margin: 0 0 10px;

@@ -10,19 +10,19 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/icon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>钱多多 — AI Seller Assistant</title>
+    <title>钱多多 — AI卖家助手</title>
     <meta name="keywords" content="e-commerce seller tools, AI title optimizer, price tracker, review analyzer, browser extension ecommerce, Chrome seller plugin" />
-    <link rel="canonical" href="https://钱多多.cozyai.chat/" />
+    <link rel="canonical" href="https://blackeagle.cozyai.chat/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="钱多多 — AI Toolkit for E‑commerce Sellers" />
     <meta property="og:description" content="22+ tools: title optimization, review analysis, price tracking, customer service, profit calculator. All in your browser sidebar." />
-    <meta property="og:url" content="https://钱多多.cozyai.chat/" />
-    <meta property="og:image" content="https://钱多多.cozyai.chat/og-image.png" />
-    <meta property="og:site_name" content="钱多多 — AI Seller Assistant" />
+    <meta property="og:url" content="https://blackeagle.cozyai.chat/" />
+    <meta property="og:image" content="https://blackeagle.cozyai.chat/og-image.png" />
+    <meta property="og:site_name" content="钱多多 / Gild" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="钱多多 — AI Toolkit for E‑commerce Sellers" />
     <meta name="twitter:description" content="22+ seller tools in your browser — optimize titles, analyze reviews, track competitor prices, manage CS. Runs locally, no server." />
-    <meta name="twitter:image" content="https://钱多多.cozyai.chat/og-image.png" />
+    <meta name="twitter:image" content="https://blackeagle.cozyai.chat/og-image.png" />
 
     <!-- Language -->
     <meta http-equiv="content-language" content="en" />
@@ -52,12 +52,12 @@
     </style>
   </head>
 
-  <body>
+  <body data-page="main">
     <header class="site-header">
       <div class="container">
         <div class="brand">
           <img class="logo-img" src="assets/logo.png" alt="钱多多 logo" />
-          <span class="name">钱多多</span>
+          <span class="name" id="brand-name">钱多多</span>
         </div>
         <nav class="top-nav">
           <a id="nav-features" href="#features">Features</a>
@@ -75,24 +75,18 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 id="hero-title">钱多多 — Privacy-First AI Toolkit for E-commerce</h1>
-          <p id="hero-sub" class="sub">BYOK · Ollama · Serverless · Multimodal · Web Interaction</p>
-          <p id="hero-desc" class="desc">Read webpages, understand content, take actions. 22+ e-commerce tools + prompt library, BYOK or local Ollama, all in your browser sidebar. Your data stays local, your models your choice.</p>
+          <h1 id="hero-title">钱多多 — AI卖家助手</h1>
+          <p id="hero-sub" class="sub">免费 · 浏览器插件 · 纯本地 · 隐私优先</p>
+          <p id="hero-desc" class="desc">22+ 电商工具 + 提示词库，读取网页、理解内容、自动操作。BYOK 自带模型或连接本地 Ollama，全部在浏览器侧边栏完成。</p>
           <div class="cta">
-            <a id="cta-chat" class="btn btn-accent" href="https://app.cozyai.chat/钱多多" target="_blank" rel="noopener noreferrer">
-              Try Online →
-              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="M2.6 12.4l17-8a1 1 0 011.3 1.3l-8 17a1 1 0 01-1.9-.2l-1.4-6.1-6.1-1.4a1 1 0 01-.2-1.9zm8.6 2.7l.9 4 5.2-11-11 5.2 4 .9 4.3-4.3a1 1 0 111.4 1.4l-4.8 4.8z" />
-              </svg>
+            <a id="cta-download" class="btn btn-accent btn-lg" href="install-offline.html">
+              <span class="btn-badge">免费</span>
+              <span id="cta-download-label">直接下载使用</span>
             </a>
-            <div class="cta-actions">
-              <a id="cta-chrome" class="btn btn-primary" href="https://chromewebstore.google.com/detail/hhmmanelkingboejoaelahnbpghhnmil?utm_source=item-share-cb">Install for Chrome</a>
-              <a id="cta-edge" class="btn btn-secondary" href="https://microsoftedge.microsoft.com/addons/detail/钱多多ai/nfnonndhjocfbdekdffinapjnakjinen">Install for Edge</a>
-            </div>
           </div>
           <div class="badges">
-            <span id="badge-1">22+ Tools · Prompt Lib</span>
-            <span id="badge-2">Privacy-First, Local</span>
+            <span id="badge-1">22+ 工具 · 提示词库</span>
+            <span id="badge-2">隐私本地优先</span>
             <span id="badge-3">BYOK + Ollama</span>
           </div>
           <img class="hero-logo" src="assets/logo.png" alt="钱多多 Logo" />
@@ -260,13 +254,13 @@
       <div class="container">
         <div class="brand">
           <img class="logo-img" src="assets/logo.png" alt="钱多多 logo" />
-          <span class="name">钱多多</span>
+          <span class="name" id="footer-brand-name">钱多多</span>
         </div>
         <div class="copy">
-          © 2026 钱多多. Local-first · Privacy-first.
+          © 2026 <span id="footer-brand">钱多多</span>. Local-first · Privacy-first.
           <a
             id="footer-producthunt"
-            href="https://www.producthunt.com/products/钱多多-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-钱多多-your-personal-ai-browser"
+            href="https://www.producthunt.com/products/BlackEagle-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-BlackEagle-your-personal-ai-browser"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -278,7 +272,7 @@
           <a id="footer-findyouragent" href="https://findyouragent.ai" target="_blank" rel="noopener noreferrer" style="text-decoration: none">
             <img src="https://findyouragent.ai/embed-badge-gradient.svg" alt="FindYourAgent Logo" />
           </a>
-          <a id="footer-feedback" href="https://github.com/andersliuyang/钱多多" target="_blank" rel="noopener">GitHub Feedback</a>
+          <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub Feedback</a>
           <a id="footer-tutorial" href="tutorial.html">Setup Guide</a>
           <a id="footer-support" href="support.html">Support & Privacy</a>
           <a id="footer-discord" href="https://discord.gg/tEt97Txhfn" target="_blank" rel="noopener">Discord</a>

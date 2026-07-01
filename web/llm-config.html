@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="钱多多 LLM configuration guide: learn how to configure chat, document understanding, image generation, and vision models." />
+    <meta name="description" content="Gild LLM configuration guide: learn how to configure chat, document understanding, image generation, and vision models." />
     <meta name="theme-color" content="#0f172a" />
-    <meta property="og:title" content="钱多多 — Model Configuration Guide" />
+    <meta property="og:title" content="Gild — Model Configuration Guide" />
     <meta property="og:description" content="Configure AI models to unlock 22+ e-commerce seller tools." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/icon.ico" />
@@ -13,33 +13,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- SEO Title & Description -->
-    <title>钱多多 — Model Configuration Guide</title>
+    <title>钱多多 — 模型配置说明</title>
     <meta name="description" content="Configure chat, document understanding, image generation, and vision models to power your e-commerce seller tools." />
 
     <!-- Keywords -->
-    <meta name="keywords" content="e-commerce seller tools, AI model configuration, 钱多多" />
+    <meta name="keywords" content="e-commerce seller tools, AI model configuration, Gild" />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://钱多多.cozyai.chat/llm-config.html" />
+    <link rel="canonical" href="https://blackeagle.cozyai.chat/llm-config.html" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="钱多多 – Model Configuration Guide" />
+    <meta property="og:title" content="Gild – Model Configuration Guide" />
     <meta property="og:description" content="Configure your AI models to unlock 22+ e-commerce seller tools." />
-    <meta property="og:url" content="https://钱多多.cozyai.chat/llm-config.html" />
-    <meta property="og:image" content="https://钱多多.cozyai.chat/og-image.png" />
-    <meta property="og:site_name" content="钱多多" />
+    <meta property="og:url" content="https://blackeagle.cozyai.chat/llm-config.html" />
+    <meta property="og:image" content="https://blackeagle.cozyai.chat/og-image.png" />
+    <meta property="og:site_name" content="Gild" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="钱多多 – Model Configuration" />
-    <meta name="twitter:description" content="Configure four types of AI models for 钱多多." />
-    <meta name="twitter:image" content="https://钱多多.cozyai.chat/og-image.png" />
+    <meta name="twitter:title" content="Gild – Model Configuration" />
+    <meta name="twitter:description" content="Configure four types of AI models for Gild." />
+    <meta name="twitter:image" content="https://blackeagle.cozyai.chat/og-image.png" />
 
     <!-- Language -->
     <meta http-equiv="content-language" content="zh" />
 
-    <link rel="icon" href="assets/icon.ico" />
+    <link rel="icon"     <link rel="icon" href="assets/icon.ico" />
     <link rel="stylesheet" href="styles.css" />
     <style>
       /* Normalize footer badge sizes */
@@ -59,6 +59,11 @@
         }
       }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+    <link rel="icon" href="assets/icon.ico" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body data-page="llm-config">
@@ -66,7 +71,7 @@
       <div class="container">
         <div class="brand">
           <img class="logo-img" src="assets/logo.png" alt="钱多多 logo" />
-          <span class="name">钱多多</span>
+          <span class="name" id="brand-name">钱多多</span>
         </div>
         <nav class="top-nav">
           <a href="index.html" id="nav-home">Home</a>
@@ -84,7 +89,7 @@
         <div class="container">
           <h1 id="llm-config-title">LLM Configuration Types</h1>
           <p class="desc" id="llm-config-desc">
-            钱多多 supports multiple types of large model capabilities and will automatically call the appropriate model type depending on the feature. The plugin currently recognizes and uses the
+            Gild supports multiple types of large model capabilities and will automatically call the appropriate model type depending on the feature. The plugin currently recognizes and uses the
             following four types of models:
           </p>
 
@@ -111,7 +116,7 @@
           <p id="llm-recommend">For the most complete and powerful AI browser experience, we recommend configuring all four model types.</p>
 
           <div class="alert" id="llm-alert">
-            Important: 钱多多 only supports model interfaces compatible with the OpenAI SDK. Only models that follow this standard can be correctly recognized, scheduled, and run stably by the
+            Important: Gild only supports model interfaces compatible with the OpenAI SDK. Only models that follow this standard can be correctly recognized, scheduled, and run stably by the
             plugin.
           </div>
 
@@ -127,25 +132,25 @@
       <div class="container">
         <div class="brand">
           <img class="logo-img" src="assets/logo.png" alt="钱多多 logo" />
-          <span class="name">钱多多</span>
+          <span class="name" id="footer-brand-name">钱多多</span>
         </div>
         <div class="copy">
-          © 2026 钱多多. Local-first · Privacy-first.
+          © 2026 Gild. Local-first · Privacy-first.
           <a
             id="footer-producthunt"
-            href="https://www.producthunt.com/products/钱多多-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-钱多多-your-personal-ai-browser"
+            href="https://www.producthunt.com/products/Gild-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-Gild-your-personal-ai-browser"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              alt="钱多多 - Your E-commerce Seller Toolkit - Your E-commerce Seller Toolkit | Product Hunt"
+              alt="Gild - Your E-commerce Seller Toolkit - Your E-commerce Seller Toolkit | Product Hunt"
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1063294&amp;theme=light&amp;t=1768633276864"
             />
           </a>
           <a id="footer-findyouragent" href="https://findyouragent.ai" target="_blank" rel="noopener noreferrer" style="text-decoration: none">
             <img src="https://findyouragent.ai/embed-badge-gradient.svg" alt="FindYourAgent Logo" />
           </a>
-          <a id="footer-feedback" href="https://github.com/andersliuyang/钱多多" target="_blank" rel="noopener">GitHub Feedback</a>
+          <a id="footer-feedback" href="https://github.com/andersliuyang/Gild" target="_blank" rel="noopener">GitHub Feedback</a>
           <a id="footer-tutorial" href="tutorial.html">Configuration Tutorial</a>
         </div>
       </div>

@@ -1,137 +1,179 @@
 <p align="center">
-  <img src="assets/logo.png" alt="BlackEagle Logo" width="50%" />
+  <img src="assets/logo.png" alt="Gild Logo" width="50%" />
 </p>
 
-[BlackEagleAI Homepage — Visit for demo videos 🎥](https://blackeagle.cozyai.chat/)
+# Gild (钱多多) 🧰
 
-> The homepage contains many demo videos and quick-start examples demonstrating features and workflows. We strongly recommend watching them to learn how to use BlackEagle.
+**E-commerce Seller AI Toolbox — inside your browser sidebar, no server required.**
 
-# BlackEagleAI 🦅
+Gild is a browser extension (Manifest V3) that brings a comprehensive AI-powered e-commerce toolkit directly into your browser sidebar. Optimize product listings, monitor competitors, generate marketing content, analyze reviews, calculate profits, and more — all without sending your data to any server.
 
-**Your Personal AI Browser for Web Automation & Knowledge Work**
-
-BlackEagle is a browser extension that turns your browser into **Your Personal AI Browser**.
-
-It can read webpages, interact with websites like a human, analyze uploaded documents, run scheduled tasks, and generate exportable documents — all **without relying on any backend server**.
-
-You bring your own AI endpoint and API key.  
-BlackEagle runs entirely in your browser.
+You bring your own AI API key. Gild runs entirely in your browser.
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
-### 🔍 Read & Understand Web Content
+### 📦 Product Panel (9 Tools)
 
-- Analyze full webpages or selected content
-- Extract structured information from complex layouts
-- Understand text, images, and embedded media
+| Tool | Description |
+|------|-------------|
+| **Optimize Title** | Analyze keyword coverage, selling points, readability → 10 optimized title options |
+| **Write Description** | 3 description styles: Feature-focused, Scenario-based, Emotional |
+| **Analyze Image** | Vision-based product main image analysis (composition, CTR potential, improvements) |
+| **Expand Keywords** | 50+ long-tail keywords across 4 categories with search intent & competition level |
+| **Calculate Profit** | Profit/margin calculator with suggested pricing for 30% target |
+| **Compare** | Side-by-side product comparison with strengths/weaknesses analysis |
+| **Analyze Reviews** | Review mining: top pros/cons, user persona, optimization suggestions |
+| **Cross-platform Adapt** | Adapt listings for Taobao/Tmall, Pinduoduo, and Douyin |
+| **Screenshot Analysis** | Vision-based e-commerce dashboard screenshot interpretation |
 
-### 🧠 Human-like Browser Interaction
+### 💬 Service Panel (4 Tools)
 
-- Open pages, click elements, fill forms
-- Operate dynamic websites
-- Execute multi-step workflows via natural language instructions
+- **Suggest Reply** — 3 tones: Standard, Enthusiastic, Concise
+- **Handle Bad Review** — Root cause analysis + reply strategy + complete response copy
+- **Quality Check** — Evaluate CS conversations with A/B/C/D scoring
+- **Templates** — CRUD management of reply templates
 
-### 📄 Upload & Analyze Documents
+### 📱 Content Panel (5 Tools)
 
-- Upload documents (PDF, text files, etc.)
-- Automatically summarize and extract insights
-- Combine document knowledge with live web context
+- **Social Content** — Xiaohongshu notes, Douyin scripts, WeChat moments copy
+- **Marketing Copy** — SMS templates, direct-link titles, livestream scripts
+- **Marketing Calendar** — H2 calendar covering major Chinese e-commerce events
+- **Evaluate Promotion** — P&L analysis for promotional campaigns
+- **Trending Topics** — Multi-platform trending topic scraping + marketing suggestions
 
-### 📝 Generate & Export Documents
+### 📊 Monitor Panel
 
-- Turn AI conversations into structured documents
-- Export results for research, reports, or internal notes
-- Suitable for analysts, writers, and consultants
+- Price tracking (watchlist + history with change alerts)
+- Review monitoring (new/bad review detection)
+- Automated price change notifications
 
-### ⏱️ Task Scheduling & Continuous Monitoring
+### 🤖 Agent Chat & Orchestration
 
-- Create scheduled or rule-based tasks
-- Continuously monitor webpages for changes
-- Automatically analyze updates and generate documents
-- Let AI work in the background
+- Conversational AI with webpage context injection
+- Multi-step task orchestration with planning & execution
+- File upload (documents, images, videos)
+- 10 LLM function-calling tools (web automation, vision, document analysis, search, Notion export, reminders, image generation, bookmark management, browser tabs)
 
 ---
 
-## 🧩 Why BlackEagle?
+## 🧩 Why Gild?
 
-### Local-Only by Design
+### Privacy First
 
 - No backend servers
 - No account required
 - No tracking or analytics
 - No vendor lock-in
-- Respect for your privacy by default
 
-All webpage content stays in your browser.  
-AI requests are sent **directly** to your configured endpoint.
+All data stays in your browser. AI requests are sent **directly** to your configured endpoint.
 
-### Bring Your Own AI (Any Model, Any Provider)
+### Bring Your Own AI
 
-BlackEagle works with any LLM provider that exposes a compatible API endpoint.  
-You are free to use **any** model you prefer — local or cloud — without restriction.
+Works with any OpenAI-compatible API endpoint. 4 model types:
 
-Choose models based on:
+| Type | Purpose |
+|------|---------|
+| `talk` | Conversation, reasoning, web understanding |
+| `vision` | Image/video analysis |
+| `document` | Long document parsing |
+| `imagegen` | Image generation |
 
-- Cost
-- Accuracy
-- Speed
-- Task requirements
+### Web Automation (WAOP v1)
+
+JSON-based web automation protocol with 11 operation types — the LLM can autonomously navigate pages, fill forms, click elements, and extract data.
 
 ---
 
 ## 🎯 Who Is This For?
 
-- Developers & engineers
-- Researchers & analysts
-- Knowledge workers
-- Automation enthusiasts
-- Anyone who wants AI to _do work_, not just chat
-
----
-
-## 🚀 Getting Started
-
-1. Download the extension from **GitHub Releases**
-2. Install the extension in your browser
-3. Configure your AI endpoint and API key
-4. Open any webpage and start using BlackEagle
-
-No signup. No server setup.
+- E-commerce sellers & operators
+- Product managers & listing optimizers
+- Customer service teams
+- Marketing & content creators
+- Cross-border e-commerce professionals
 
 ---
 
 ## 🔐 Privacy & Security
 
-BlackEagle operates entirely on the client side and is built to **respect your privacy**.
+Gild operates entirely on the client side.
 
-- Web content is processed locally
+- All data stored in `chrome.storage.local`
 - No centralized data collection
 - You control which AI endpoint receives requests
 
 ---
 
-## Browser extension installation (Chrome / Edge)
+## 🚀 Quick Start
 
-BlackEagle currently supports Chrome and Edge only. Firefox is not supported.
+### Prerequisites
 
-Simple install (developer mode):
+- Chrome or Edge browser
+- An OpenAI-compatible API key
 
-- Build the extension (from the extension directory): `npm run build:blackeagle`.
-- Open the extensions page in Chrome or Edge (`chrome://extensions/` or `edge://extensions/`).
-- Enable "Developer mode" and click "Load unpacked".
-- Select the build output folder that contains `manifest.json`.
+### Installation (Developer Mode)
 
-## Large model configuration types
+1. **Build the Angular sidebar:**
+   ```bash
+   npm run build
+   ```
+   (Runs `node init.js` then `ng build --configuration production`, outputs to `extensions/gild/sidebar/`)
 
-BlackEagle supports multiple categories of large models and will automatically select the most appropriate type for each feature. We recommend configuring endpoints (and API keys) for the model types you plan to use.
+2. **Load the extension** in Chrome/Edge:
+   - Open `chrome://extensions` or `edge://extensions`
+   - Enable **Developer mode**
+   - Click **Load unpacked** and select the `extensions/gild/` folder
 
-- **Chat / LLM**: General-purpose conversational models used for webpage understanding, summarization, reasoning, and text generation.
-- **Document / File Understanding**: Models specialized in parsing long or structured documents (PDFs, long web pages, and uploaded files) and extracting structured information.
-- **Image Generation**: Text-to-image models used to generate illustrations, cover images, charts, and other creative assets from text or webpage content.
-- **Vision / Multimodal**: Models capable of understanding images or video frames and performing multimodal analysis (e.g., extracting visual information, describing images, or combining image+text reasoning).
+3. **Configure your LLM API key** in Settings → LLM Config
 
-The extension will route tasks to the appropriate model type (for example, document parsing uses Document models, whereas webpage understanding typically uses Chat/LLM models). For the best experience, configure endpoints for all applicable categories. BlackEagle expects endpoints compatible with the OpenAI-style SDK/interface; models and providers following that convention are supported and will integrate smoothly.
+4. Click the extension icon to open the sidebar and start using Gild.
 
-## The extension should load and appear in the browser toolbar.
+### LLM Configuration
+
+Configure at least one `talk`-type model. Recommended model types:
+
+| Type | Example Model | Required? |
+|------|--------------|-----------|
+| `talk` | GPT-4o-mini, DeepSeek, Claude 3 | ✅ Required |
+| `vision` | GPT-4o, GPT-4o-mini | ❌ Optional |
+| `document` | GPT-4o-mini, Claude 3 Haiku | ❌ Optional |
+| `imagegen` | DALL-E 3 | ❌ Optional |
+
+---
+
+## 📁 Repository Layout
+
+```
+extensions/gild/             Browser extension (Manifest V3)
+├── background.js            Service worker
+├── content.js               Content script (page data extraction)
+├── execute.js               WAOP v1 web automation executor
+├── translate.js             In-page EN→ZH translation engine
+├── taskModule.js            Scheduled task management
+├── manifest.json            Extension manifest
+└── sidebar/                 Built Angular app output
+
+blackeagle-sidebar/          Angular 21 sidebar application
+├── src/app/
+│   ├── agenttalk/           Chat component, file upload, orchestration
+│   ├── panels/              Product, Service, Content, Monitor panels
+│   ├── tools/               10 function-calling tool implementations
+│   ├── services/            LLM, Search, EcommerceData, Template services
+│   ├── orchestration/       Task orchestrator (multi-step planning & execution)
+│   ├── i18n.ts              Central i18n dictionary (EN + ZH)
+│   └── llm.ts               LLM service (OpenAI client, streaming)
+```
+
+---
+
+## 🌐 Internationalization
+
+English + Chinese (dual system for extension and Angular app). Language auto-detects and can be toggled in settings.
+
+---
+
+## 📄 License
+
+This project is for personal and commercial use. All rights reserved.
